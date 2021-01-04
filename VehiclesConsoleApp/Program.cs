@@ -9,9 +9,16 @@ namespace VehiclesConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Amphibian: \n");
             TestVehicleAmphibian();
+
+            Console.WriteLine("***********\n Car: \n");
             TestVehicleCar();
+
+            Console.WriteLine("***********\n Plane: \n");
             TestVehiclePlane();
+
+            Console.WriteLine("***********\n Ship: \n");
             TestVehicleShip();
         }
 
@@ -60,12 +67,39 @@ namespace VehiclesConsoleApp
         {
             Motor motor = new Motor(FuelType.Gasoline, 500);
             Plane plane = new Plane(motor);
+
+            plane.Start();
+            Console.WriteLine(plane.ToString());
+
+            plane.IncreaseSpeed(100);
+            Console.WriteLine(plane.ToString());
+
+            plane.TakeOff();
+            Console.WriteLine(plane.ToString());
+
+            plane.Stop();
+            Console.WriteLine(plane.ToString());
+
+            plane.Land();
+            Console.WriteLine(plane.ToString());
+
+            plane.Stop();
+            Console.WriteLine(plane.ToString());
         }
 
         private static void TestVehicleShip()
         {
             Motor motor = new Motor(FuelType.Electricity, 600);
             Ship ship = new Ship(50, motor);
+
+            ship.Start();
+            Console.WriteLine(ship.ToString());
+
+            ship.IncreaseSpeed(80);
+            Console.WriteLine(ship.ToString());
+
+            ship.Stop();
+            Console.WriteLine(ship.ToString());
         }
     }
 }

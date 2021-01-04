@@ -74,8 +74,8 @@ namespace VehiclesLibrary.src
             if (IsInMove)
                 throw new VehicleIsAlreadyMoving();
 
-            State = VehicleState.InMove;
             CurrentSpeed = MinSpeed;
+            State = VehicleState.InMove;
         }
 
         public void Stop()
@@ -83,8 +83,8 @@ namespace VehiclesLibrary.src
             if (!IsInMove)
                 throw new VehicleIsAlreadyStanding();
 
-            State = VehicleState.Stand;
             CurrentSpeed = 0;
+            State = VehicleState.Stand;
         }
 
         protected void OnEnvironmentChanged()

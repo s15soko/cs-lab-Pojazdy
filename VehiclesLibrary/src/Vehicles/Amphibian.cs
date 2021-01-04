@@ -21,11 +21,13 @@ namespace VehiclesLibrary.src.Vehicles
         public void GetIntoWater()
         {
             Environment = VehicleMovementEnvironment.Water;
+            OnEnvironmentChanged();
         }
 
         public void GetOntoGround()
         {
             Environment = VehicleMovementEnvironment.Ground;
+            OnEnvironmentChanged();
         }
     }
 }

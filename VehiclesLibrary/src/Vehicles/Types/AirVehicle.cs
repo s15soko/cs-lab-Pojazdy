@@ -13,6 +13,7 @@ namespace VehiclesLibrary.src.Vehicles.Types
         {
             if (Environment == VehicleMovementEnvironment.Air)
             {
+                System.Console.WriteLine("The vehicle can not land.");
                 return;
             }
 
@@ -22,11 +23,14 @@ namespace VehiclesLibrary.src.Vehicles.Types
         public void Land()
         {
             Environment = VehicleMovementEnvironment.Ground;
+            System.Console.WriteLine("The vehicle landed.");
+            OnEnvironmentChanged();
         }
 
         public void TakeOff()
         {
             Environment = VehicleMovementEnvironment.Air;
+            OnEnvironmentChanged();
         }
 
         public override string ToString()
