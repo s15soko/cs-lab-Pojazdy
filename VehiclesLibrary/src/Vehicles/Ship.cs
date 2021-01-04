@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VehiclesLibrary.src.Vehicles
+﻿namespace VehiclesLibrary.src.Vehicles
 {
-    public class Ship
+    public class Ship : WaterVehicle
     {
-        public Ship()
+        public Motor Motor { get; }
+        public Ship(int displacement, Motor motor) : base(displacement: displacement)
         {
-
+            Motor = motor;
         }
     }
 }
