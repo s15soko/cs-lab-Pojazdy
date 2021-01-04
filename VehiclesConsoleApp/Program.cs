@@ -37,17 +37,20 @@ namespace VehiclesConsoleApp
 
         private static void TestVehicleCar()
         {
-            //Car car = new Car();
+            Motor motor = new Motor(FuelType.LPG, 500);
+            Car car = new Car(motor);
         }
 
         private static void TestVehiclePlane()
         {
-            //Plane plane = new Plane();
+            Motor motor = new Motor(FuelType.Gasoline, 500);
+            Plane plane = new Plane(motor);
         }
 
         private static void TestVehicleShip()
         {
-            //Ship ship = new Ship();
+            Motor motor = new Motor(FuelType.Electricity, 600);
+            Ship ship = new Ship(50, motor);
         }
     }
 }
