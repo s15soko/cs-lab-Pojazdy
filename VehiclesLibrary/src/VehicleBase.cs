@@ -44,7 +44,7 @@ namespace VehiclesLibrary.src
             set
             {
                 _environment = value;
-                OnEnviromentChanged();
+                OnEnvironmentChanged();
             }
         }
 
@@ -87,7 +87,7 @@ namespace VehiclesLibrary.src
             CurrentSpeed = 0;
         }
 
-        public void OnEnviromentChanged()
+        protected void OnEnvironmentChanged()
         {
             switch (Environment)
             {
@@ -107,10 +107,7 @@ namespace VehiclesLibrary.src
                     SpeedUnit = SpeedUnit.MPerSecond;
                     return;
                 default:
-                    MinSpeed = 0;
-                    MaxSpeed = 0;
-                    SpeedUnit = SpeedUnit.KmPerHour;
-                    return;
+                    throw new EnvironmentNotFound();
             }
         }
 

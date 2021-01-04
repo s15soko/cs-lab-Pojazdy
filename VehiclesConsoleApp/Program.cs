@@ -6,7 +6,30 @@ namespace VehiclesConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TestVehicleAmphibian();
+            TestVehicleCar();
+            TestVehiclePlane();
+            TestVehicleShip();
+        }
+
+        private static void TestVehicleAmphibian()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void TestVehicleCar()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void TestVehiclePlane()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void TestVehicleShip()
+        {
+            throw new NotImplementedException();
         }
     }
 }
