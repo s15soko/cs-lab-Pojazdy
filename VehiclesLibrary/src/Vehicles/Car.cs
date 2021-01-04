@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VehiclesLibrary.src.Vehicles
+﻿namespace VehiclesLibrary.src.Vehicles
 {
-    public class Car
+    public class Car : GroundVehicle
     {
-        public Car()
-        {
+        public Motor Motor { get; }
 
+        public Car(Motor motor, int numberOfWheels = 4) : base(numberOfWheels: numberOfWheels)
+        {
+            Motor = motor;
         }
     }
 }
