@@ -1,4 +1,6 @@
-﻿namespace VehiclesLibrary.src.Vehicles
+﻿using VehiclesLibrary.src.Vehicles.Types;
+
+namespace VehiclesLibrary.src.Vehicles
 {
     public class Car : GroundVehicle
     {

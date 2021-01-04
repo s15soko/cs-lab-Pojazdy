@@ -1,6 +1,6 @@
 ﻿using VehiclesLibrary.src.Enums;
 
-namespace VehiclesLibrary.src
+namespace VehiclesLibrary.src.Vehicles.Types
 {
     public class GroundVehicle : VehicleBase
     {

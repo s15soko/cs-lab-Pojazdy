@@ -21,18 +21,24 @@ namespace VehiclesConsoleApp
             Amphibian amphibian = new Amphibian(2, 6, motor);
 
             amphibian.Start();
+            Console.WriteLine(amphibian.ToString());
 
             amphibian.IncreaseSpeed(20);
             amphibian.IncreaseSpeed(10);
             amphibian.IncreaseSpeed(30);
+            Console.WriteLine(amphibian.ToString());
 
             amphibian.GetIntoWater();
+            Console.WriteLine(amphibian.ToString());
 
             amphibian.DecreaseSpeed(15);
+            Console.WriteLine(amphibian.ToString());
 
             amphibian.GetOntoGround();
+            Console.WriteLine(amphibian.ToString());
 
             amphibian.Stop();
+            Console.WriteLine(amphibian.ToString());
         }
 
         private static void TestVehicleCar()
