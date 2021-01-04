@@ -45,6 +45,15 @@ namespace VehiclesConsoleApp
         {
             Motor motor = new Motor(FuelType.LPG, 500);
             Car car = new Car(motor);
+
+            car.Start();
+            Console.WriteLine(car.ToString());
+
+            car.IncreaseSpeed(100);
+            Console.WriteLine(car.ToString());
+
+            car.Stop();
+            Console.WriteLine(car.ToString());
         }
 
         private static void TestVehiclePlane()
