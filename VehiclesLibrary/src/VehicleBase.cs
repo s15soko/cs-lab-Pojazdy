@@ -69,7 +69,7 @@ namespace VehiclesLibrary.src
             CurrentSpeed += diff;
         }
 
-        public void Move()
+        public void Start()
         {
             if (IsInMove)
                 throw new VehicleIsAlreadyMoving();

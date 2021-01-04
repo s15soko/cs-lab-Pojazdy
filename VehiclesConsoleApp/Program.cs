@@ -20,7 +20,7 @@ namespace VehiclesConsoleApp
             Motor motor = new Motor(FuelType.Oil, 350);
             Amphibian amphibian = new Amphibian(2, 6, motor);
 
-            amphibian.Move();
+            amphibian.Start();
 
             amphibian.IncreaseSpeed(20);
             amphibian.IncreaseSpeed(10);

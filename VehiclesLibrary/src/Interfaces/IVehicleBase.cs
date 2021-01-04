@@ -12,7 +12,7 @@ namespace VehiclesLibrary.src.Interfaces
         public SpeedUnit SpeedUnit { get; set; }
         public VehicleState State { get; set; }
 
-        public void Move();
+        public void Start();
         public void Stop();
 
         //
