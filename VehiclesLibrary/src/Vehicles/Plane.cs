@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VehiclesLibrary.src.Vehicles
+﻿namespace VehiclesLibrary.src.Vehicles
 {
-    public class Plane
+    public class Plane : AirVehicle
     {
-        public Plane()
-        {
+        public Motor Motor { get; }
 
+        public Plane(Motor motor)
+        {
+            Motor = motor;
         }
     }
 }
