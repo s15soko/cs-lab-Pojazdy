@@ -80,7 +80,7 @@ namespace VehiclesLibrary.src
 
         public void Stop()
         {
-            if (IsInMove)
+            if (!IsInMove)
                 throw new VehicleIsAlreadyStanding();
 
             State = VehicleState.Stand;
